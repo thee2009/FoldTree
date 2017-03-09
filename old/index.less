@@ -1,0 +1,100 @@
+
+.cost-name {
+    padding: 10px 0;
+    text-indent: 10px;
+    height: 20px;
+    white-space: nowrap;
+    transition: all ease 0.2s;
+}
+
+.cost-name:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-align: center;
+    color: transparent;
+    margin-right: 5px;
+    border-radius: 2px;
+    padding: 1px 2px;
+}
+
+.cost-name[data-fold=fold],
+.cost-name[data-fold=unfold] {
+    cursor: pointer;
+}
+
+.cost-name[data-fold=fold]:before,
+.cost-name[data-fold=unfold]:before {
+    background: #666;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cost-name[data-fold=fold]:before {
+    content: "╋";
+}
+
+.cost-name[data-fold=unfold]:before {
+    content: "━";
+}
+
+.cost-name[data-child="0"] {
+    font-weight: bold;
+}
+
+.cost-name[data-child="1"] {
+    text-indent: 2em;
+}
+
+.cost-name[data-child="2"] {
+    text-indent: 3em;
+}
+
+.cost-name[data-child="3"] {
+    text-indent: 4em;
+}
+
+.cost-name[data-child="4"] {
+    text-indent: 5em;
+}
+
+.cost-name[data-child="5"] {
+    text-indent: 6em;
+}
+
+.cost-name[data-child="6"] {
+    text-indent: 7em;
+}
+
+.cost-name[data-child="7"] {
+    text-indent: 8em;
+}
+
+.cost-name[data-child="8"] {
+    text-indent: 9em;
+}
+
+.cost-name[data-child="9"] {
+    text-indent: 10em;
+}
+
+.cost-name:nth-child(even),
+.cost-count:nth-child(even) {
+    background: #f8f9f8;
+}
+
+.cost-name,
+.cost-count {
+    transition: all ease 0.2s;
+    border-bottom: 1px solid #eee;
+}
+
+.cost-name:last-child,
+.cost-count:last-child {
+    border-bottom-color: transparent;
+}
+
+.hide-height {
+    height: 0;
+    padding: 0;
+    border-bottom: 0;
+    overflow: hidden;
+}
